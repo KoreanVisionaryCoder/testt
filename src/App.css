@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.final-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+@media (max-width: 768px) {
+    .final-section {
+        padding: 10px;
+    }
+}
+
+.fixed-background-section {
+    position: relative;
+    height: 120vh; /* Adjust the height as needed */
+    background: url('./assets/images/slider1.png') no-repeat center center fixed; /* 경로 수정 */
+    background-size: cover;
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.main-caption {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.sub-caption {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    .fixed-background-section {
+        display: none;
+    }
+    .main-caption {
+        font-size: 1.5em;
+    }
+    .sub-caption {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-caption {
+        font-size: 1.2em;
+    }
+    .sub-caption {
+        font-size: 0.9em;
+    }
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.section {
+    flex: 1 1 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+
+@media (max-width: 768px) {
+    flex: 1 1 45%;
+}
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

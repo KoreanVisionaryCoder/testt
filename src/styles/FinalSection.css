@@ -1,0 +1,22 @@
+.final-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.responsive-image , graybar {
+    max-width: 5%;
+    height: auto;
+    padding: 10px 100px;
+    margin-bottom: 40vh;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+@media (max-width: 768px) {
+    .final-section {
+        padding: 10px;
+    }
+}

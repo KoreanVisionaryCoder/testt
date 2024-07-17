@@ -1,0 +1,14 @@
+/* Section.css */
+.section {
+    padding: 0px;
+    margin: 0px 0px;
+    background-color: #f5f5f5;
+}
+
+.section-title {
+    margin-bottom: 10px;
+}
+
+.section-content {
+    line-height: 1.5;
+}
